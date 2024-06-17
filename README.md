@@ -31,9 +31,9 @@
 │   └── index.js
 ├── static                    // 静态文件
 │   └── logo.png
-├── store                     // pinia 存储
-│   └── index.js
-├── uni.scss                  // vk-uview-ui 配置
+├── uni_modules                  // gt-ui 组件库
+│   └── gt-ui
+├── uni.scss                  // gt-ui 配置
 └── yarn.lock
 
 ```
@@ -46,12 +46,5 @@
 
  3. 选择运行到小程序模拟器
 
-### 自带工具库 grantlibs
-
-<div style="color: #E6A23C; fontSize: 18px; padding: 20px 0">
-  grantlibs基于uniapp开发过程总结的一些实用技巧及其他类loadash methods
-</div>
-
- <https://foreverguo.github.io/grantlibs/>
 
 
