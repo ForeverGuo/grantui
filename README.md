@@ -1,4 +1,4 @@
-### vue3 + pinia + vk-uview-ui
+### vue3 + pinia + gt-ui
 
 ### 项目架构
 
