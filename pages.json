@@ -22,6 +22,12 @@
 					"style": {
 						"navigationBarTitleText": "按钮"
 					}
+				},
+				{
+					"path": "icon/icon",
+					"style": {
+						"navigationBarTitleText": "图标"
+					}
 				}
 			]
 		}

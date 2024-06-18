@@ -4,6 +4,9 @@
 		:class="[ 
 			plain ? `gt-button--plain` : '',
 			hairline ? `gt-button--hairline` : '',
+			disabled ? `gt-button--disabled` : '',
+			square ? `gt-button--square` : '',
+			round ? `gt-button--round` : '',
 			`gt-button--${ type }`,
 		]"
 	>
@@ -30,6 +33,21 @@
 		},
 		// 是否使用 0.5px 边框
 		hairline: {
+			type: Boolean,
+			default: false
+		},
+		// disabled	是否禁用按钮
+		disabled: {
+			type: Boolean,
+			default: false
+		},
+		// round	是否为圆形按钮
+		round: {
+			type: Boolean,
+			default: false
+		},
+		// square	是否为方形按钮
+		square: {
 			type: Boolean,
 			default: false
 		}

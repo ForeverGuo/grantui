@@ -35,26 +35,25 @@ $gt-button-disabled-opacity: $gt-disabled-opacity;
 $gt-button-icon-size: 1.2em !default;
 $gt-button-loading-icon-size: 20px !default;
 
-
 .gt-theme-dark {
-  $gt-button-plain-background: transparent;
+	$gt-button-plain-background: transparent;
 }
 
 .gt-button {
 	@include flex(row);
-	
-  position: relative;
-  box-sizing: border-box;
-  height: $gt-button-default-height;
-  margin: 0;
-  padding: 0 20rpx;
-  font-size: $gt-button-default-font-size;
-  border-radius: $gt-button-radius;
-  cursor: pointer;
-  transition: opacity $gt-duration-fast;
-  -webkit-appearance: none;
-  -webkit-font-smoothing: auto;
-	
+
+	position: relative;
+	box-sizing: border-box;
+	height: $gt-button-default-height;
+	margin: 0;
+	padding: 0 20rpx;
+	font-size: $gt-button-default-font-size;
+	border-radius: $gt-button-radius;
+	cursor: pointer;
+	transition: opacity $gt-duration-fast;
+	-webkit-appearance: none;
+	-webkit-font-smoothing: auto;
+
 	&::before {
 		position: absolute;
 		top: 50%;
@@ -69,95 +68,107 @@ $gt-button-loading-icon-size: 20px !default;
 		opacity: 0;
 		content: ' ';
 	}
-	
-	
-	  &--default {
-	    color: $gt-button-default-color;
-	    background: $gt-button-default-background;
-	    border: $gt-button-border-width solid
-	      $gt-button-default-border-color;
-	  }
-		
-		&--primary {
-			color: $gt-button-primary-color;
-			background: $gt-button-primary-background;
-			border: $gt-button-border-width solid
-				$gt-button-primary-border-color;
-		}
-		
-		&--success {
-		    color: $gt-button-success-color;
-		    background: $gt-button-success-background;
-		    border: $gt-button-border-width solid
-		      $gt-button-success-border-color;
-		}
-		
-		&--danger {
-			color: $gt-button-danger-color;
-			background: $gt-button-danger-background;
-			border: $gt-button-border-width solid
-				$gt-button-danger-border-color;
-		}
-		
-		&--warning {
-			color: $gt-button-warning-color;
-			background: $gt-button-warning-background;
-			border: $gt-button-border-width solid
-				$gt-button-warning-border-color;
-		}
-		
-		&--plain {
-		    background: $gt-button-plain-background;
-		
-		    &.gt-button--primary {
-		      color: $gt-button-primary-background;
-		    }
-		
-		    &.gt-button--success {
-		      color: $gt-button-success-background;
-		    }
-		
-		    &.gt-button--danger {
-		      color: $gt-button-danger-background;
-		    }
-		
-		    &.gt-button--warning {
-		      color: $gt-button-warning-background;
-		    }
-		}
-		
-		&--hairline {
-		    position: relative;
-				border-width: 0rpx !important;
-				z-index: 0;
-				
-				&::after {
-					content: "";
-					border-style: inherit !important;
-					border-color: inherit !important;
-					border-radius: calc($gt-button-radius * 2);
-					box-sizing: border-box !important;
-					position: absolute;
-					border-width: 2rpx !important;
-					left: 0;
-					top: 0;
-					width: 200% !important;
-					height: 200% !important;
-					transform-origin: 0 0;
-					transform: scale(0.5) !important;
-					z-index: -1;
-				}
-			
-		
-		    &.gt-button--round::after {
-		      border-radius: $gt-button-round-radius;
-		    }
-		
-		    &.gt-button--square::after {
-		      border-radius: 0;
-		    }
+
+	&--default {
+		color: $gt-button-default-color;
+		background: $gt-button-default-background;
+		border: $gt-button-border-width solid $gt-button-default-border-color;
+	}
+
+	&--primary {
+		color: $gt-button-primary-color;
+		background: $gt-button-primary-background;
+		border: $gt-button-border-width solid $gt-button-primary-border-color;
+	}
+
+	&--success {
+		color: $gt-button-success-color;
+		background: $gt-button-success-background;
+		border: $gt-button-border-width solid $gt-button-success-border-color;
+	}
+
+	&--danger {
+		color: $gt-button-danger-color;
+		background: $gt-button-danger-background;
+		border: $gt-button-border-width solid $gt-button-danger-border-color;
+	}
+
+	&--warning {
+		color: $gt-button-warning-color;
+		background: $gt-button-warning-background;
+		border: $gt-button-border-width solid $gt-button-warning-border-color;
+	}
+
+	&--plain {
+		background: $gt-button-plain-background;
+
+		&.gt-button--primary {
+			color: $gt-button-primary-background;
 		}
 
+		&.gt-button--success {
+			color: $gt-button-success-background;
+		}
 
+		&.gt-button--danger {
+			color: $gt-button-danger-background;
+		}
+
+		&.gt-button--warning {
+			color: $gt-button-warning-background;
+		}
+	}
+
+	&--hairline {
+		position: relative;
+		border-width: 0rpx !important;
+		z-index: 0;
+
+		&::after {
+			content: '';
+			border-style: inherit !important;
+			border-color: inherit !important;
+			border-radius: calc($gt-button-radius * 2);
+			box-sizing: border-box !important;
+			position: absolute;
+			border-width: 2rpx !important;
+			left: 0;
+			top: 0;
+			width: 200% !important;
+			height: 200% !important;
+			transform-origin: 0 0;
+			transform: scale(0.5) !important;
+			z-index: -1;
+		}
+
+		&.gt-button--round::after {
+			border-radius: $gt-button-round-radius;
+		}
+
+		&.gt-button--square::after {
+			border-radius: 0;
+		}
+	}
+
+	&--disabled {
+		cursor: not-allowed;
+		opacity: $gt-button-disabled-opacity;
+	}
+
+	&--loading {
+		cursor: default;
+	}
 	
+	&--block {
+	  display: block;
+	  width: 100%;
+	} 
+
+	&--round {
+		border-radius: $gt-button-round-radius;
+	}
+
+	&--square {
+		border-radius: 0;
+	}
 }

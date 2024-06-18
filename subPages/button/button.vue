@@ -20,6 +20,19 @@
 			<gt-button class="mr30 mb20" plain hairline type="success">细边框按钮</gt-button>
 			<gt-button class="mr30 mb20" plain hairline type="primary">细边框按钮</gt-button>	
 		</view>
+		
+		<view class="mt20 mb30 fs28 c-455a">禁用状态</view>
+		<view class="flex-box flex-wrap">
+			<gt-button class="mr30 mb20" disabled type="success">细边框按钮</gt-button>
+			<gt-button class="mr30 mb20" disabled type="primary">细边框按钮</gt-button>	
+		</view>
+		
+		<view class="mt20 mb30 fs28 c-455a">按钮形状</view>
+		<view class="flex-box flex-wrap">
+			<gt-button class="mr30 mb20" square type="success">方形按钮</gt-button>
+			<gt-button class="mr30 mb20" round type="primary">圆形按钮</gt-button>	
+		</view>
+		
 	</view>
 </template>
 

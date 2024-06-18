@@ -1,0 +1,88 @@
+.gtui-adduser:before {
+  content: "\e7ae";
+}
+
+.gtui-deleteteam:before {
+  content: "\e7af";
+}
+
+.gtui-deleteuser:before {
+  content: "\e7b0";
+}
+
+.gtui-addteam:before {
+  content: "\e7b1";
+}
+
+.gtui-user:before {
+  content: "\e7b2";
+}
+
+.gtui-team:before {
+  content: "\e7b3";
+}
+
+.gtui-like:before {
+  content: "\e7c8";
+}
+
+.gtui-unlike:before {
+  content: "\e7c9";
+}
+
+.gtui-image:before {
+  content: "\e7de";
+}
+
+.gtui-man:before {
+  content: "\e7e2";
+}
+
+.gtui-right:before {
+  content: "\e7eb";
+}
+
+.gtui-left:before {
+  content: "\e7ec";
+}
+
+.gtui-up:before {
+  content: "\e7ed";
+}
+
+.gtui-down:before {
+  content: "\e7ee";
+}
+
+.gtui-fullscreen:before {
+  content: "\e7ef";
+}
+
+.gtui-fullscreen-exit:before {
+  content: "\e7f0";
+}
+
+.gtui-arrowright:before {
+  content: "\e7f1";
+}
+
+.gtui-arrowup:before {
+  content: "\e7f2";
+}
+
+.gtui-arrowleft:before {
+  content: "\e7f3";
+}
+
+.gtui-arrowdown:before {
+  content: "\e7f4";
+}
+
+.gtui-woman:before {
+  content: "\e8f1";
+}
+
+.gtui-check-circle:before {
+  content: "\e77d";
+}
+
