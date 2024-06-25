@@ -6,6 +6,41 @@
   "description": "uniapp的vue3组件库",
   "glyphs": [
     {
+      "icon_id": "1486848",
+      "name": "支付宝支付",
+      "font_class": "zhifubaozhifu",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "7215720",
+      "name": "loading",
+      "font_class": "loading3",
+      "unicode": "e6e8",
+      "unicode_decimal": 59112
+    },
+    {
+      "icon_id": "7408324",
+      "name": "loading",
+      "font_class": "loading2",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "15933094",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "40154691",
+      "name": "loading",
+      "font_class": "loading1",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
       "icon_id": "4765891",
       "name": "setting",
       "font_class": "setting",
@@ -78,14 +113,14 @@
     {
       "icon_id": "577329",
       "name": "标星-fill",
-      "font_class": "biaoxingfill",
+      "font_class": "xing-fill",
       "unicode": "e732",
       "unicode_decimal": 59186
     },
     {
       "icon_id": "577330",
-      "name": "标星",
-      "font_class": "biaoxing",
+      "name": "星",
+      "font_class": "xing",
       "unicode": "e733",
       "unicode_decimal": 59187
     },
@@ -127,7 +162,7 @@
     {
       "icon_id": "577373",
       "name": "通知-fill",
-      "font_class": "tongzhifill",
+      "font_class": "tongzh-ifill",
       "unicode": "e758",
       "unicode_decimal": 59224
     },
@@ -155,7 +190,7 @@
     {
       "icon_id": "577381",
       "name": "喜欢-fill",
-      "font_class": "xihuanfill",
+      "font_class": "xihuan-fill",
       "unicode": "e760",
       "unicode_decimal": 59232
     },
@@ -169,7 +204,7 @@
     {
       "icon_id": "577383",
       "name": "信息-fill",
-      "font_class": "xinxifill",
+      "font_class": "xinxi-fill",
       "unicode": "e762",
       "unicode_decimal": 59234
     },
@@ -183,7 +218,7 @@
     {
       "icon_id": "577389",
       "name": "坐标-fill",
-      "font_class": "zuobiaofill",
+      "font_class": "zuobiao-fill",
       "unicode": "e768",
       "unicode_decimal": 59240
     },
@@ -207,13 +242,6 @@
       "font_class": "close-circle",
       "unicode": "e77e",
       "unicode_decimal": 59262
-    },
-    {
-      "icon_id": "4765866",
-      "name": "message",
-      "font_class": "message",
-      "unicode": "e78a",
-      "unicode_decimal": 59274
     },
     {
       "icon_id": "4936478",

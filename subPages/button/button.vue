@@ -33,6 +33,14 @@
 			<gt-button class="mr30 mb20" round type="primary">圆形按钮</gt-button>	
 		</view>
 		
+		<view class="mt20 mb30 fs28 c-455a">加载状态</view>
+		<view class="flex-box flex-wrap">
+			<gt-button class="mr30 mb20" loading type="success"></gt-button>
+			<gt-button class="mr30 mb20" loading type="primary" loading-type="spinner"></gt-button>	
+			<gt-button class="mr30 mb20" loading type="primary" loading-text="加载中..."></gt-button>
+		</view>
+		
+		
 	</view>
 </template>
 

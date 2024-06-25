@@ -2,10 +2,10 @@
 	<view>
 		<text 
 			class="gt-icons"
-			:class="[`gtui-${name}`]"
+			:class="[`gtui-${name}`, loading ? 'spinner' : '' ]"
 			:style="{ 
 				fontSize: setIconSize, 
-				color: color 
+				color: color
 			}"
 		></text>
 	</view>
@@ -26,6 +26,10 @@
 		color: {
 			type: String,
 			default: 'inherit'
+		},
+		loading: {
+			type: Boolean,
+			default: false
 		}
 	})
 	// 默认使用px，也可以带有rpx
@@ -49,6 +53,17 @@
 		font-family: gticons;
 		text-decoration: none;
 		text-align: center;
+	}
+	
+	.spinner {
+		display: inline-block;
+	  height: 35px;
+	  width: 35px;
+	  animation: rotate 1s ease-in-out infinite;
+	}
+	@keyframes rotate {
+	  0%   { transform: rotate(0);      }
+	  to { transform: rotate(1turn); }
 	}
 	
 </style>

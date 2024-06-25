@@ -1,19 +1,22 @@
-@font-face {
-  font-family: "iconfont"; /* Project id 4588868 */
-  src: url('iconfont.eot?t=1718941149326'); /* IE9 */
-  src: url('iconfont.eot?t=1718941149326#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('iconfont.woff2?t=1718941149326') format('woff2'),
-       url('iconfont.woff?t=1718941149326') format('woff'),
-       url('iconfont.ttf?t=1718941149326') format('truetype'),
-       url('iconfont.svg?t=1718941149326#iconfont') format('svg');
+
+.gtui-zhifubaozhifu:before {
+  content: "\e634";
 }
 
-.iconfont {
-  font-family: "iconfont" !important;
-  font-size: 16px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.gtui-loading1:before {
+  content: "\e6e8";
+}
+
+.gtui-loading2:before {
+  content: "\e640";
+}
+
+.gtui-weixin:before {
+  content: "\e607";
+}
+
+.gtui-loading3:before {
+  content: "\e614";
 }
 
 .gtui-setting:before {
@@ -84,7 +87,7 @@
   content: "\e752";
 }
 
-.gtui-tongzhi-fill:before {
+.gtui-tongzh-ifill:before {
   content: "\e758";
 }
 
@@ -130,10 +133,6 @@
 
 .gtui-close-circle:before {
   content: "\e77e";
-}
-
-.gtui-message:before {
-  content: "\e78a";
 }
 
 .gtui-check-circle-fill:before {

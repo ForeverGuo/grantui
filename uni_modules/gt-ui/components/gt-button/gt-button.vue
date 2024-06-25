@@ -11,10 +11,15 @@
 		]"
 	>
 		<slot></slot>
+		<view v-if="loading">
+			<gtLoading v-if="!loadingType" :id="1" :loadingText="loadingText" />
+			<gtLoading v-else :id="4" :loadingText="loadingText" />
+		</view>
 	</view>
 </template>
 
 <script lang="ts" setup>
+	import gtLoading from '../gt-loading/gt-loading.vue';
 	defineProps({
 		// 按钮类型，可选值为 default primary success warning danger
 		type: {
@@ -50,6 +55,18 @@
 		square: {
 			type: Boolean,
 			default: false
+		},
+		loading: {
+			type: Boolean,
+			default: false
+		},
+		loadingType: {
+			type: String,
+			default: ''
+		},
+		loadingText: {
+			type: String,
+			default: ''
 		}
 	})
 </script>
