@@ -1,15 +1,15 @@
 @import '../../libs/css/component.scss';
 
-$gt-button-mini-height: 24px !default;
+$gt-button-mini-height: 48rpx !default;
 $gt-button-mini-padding: 0 $gt-padding-base;
 $gt-button-mini-font-size: $gt-font-size-xs;
-$gt-button-small-height: 32px !default;
+$gt-button-small-height: 64rpx !default;
 $gt-button-small-padding: 0 $gt-padding-xs;
 $gt-button-small-font-size: $gt-font-size-sm;
-$gt-button-normal-padding: 0 15px !default;
+$gt-button-normal-padding: 0 30rpx !default;
 $gt-button-normal-font-size: $gt-font-size-md;
-$gt-button-large-height: 50px !default;
-$gt-button-default-height: 44px !default;
+$gt-button-large-height: 100rpx !default;
+$gt-button-default-height: 88rpx !default;
 $gt-button-default-line-height: 1.2 !default;
 $gt-button-default-font-size: $gt-font-size-lg;
 $gt-button-default-color: $gt-text-color;
@@ -116,6 +116,32 @@ $gt-button-loading-icon-size: 20px !default;
 
 		&.gt-button--warning {
 			color: $gt-button-warning-background;
+		}
+	}
+	
+	&--large {
+		width: 100%;
+		height: $gt-button-large-height;
+	}
+
+	&--normal {
+		padding: $gt-button-normal-padding;
+		font-size: $gt-button-normal-font-size;
+	}
+
+	&--small {
+		height: $gt-button-small-height;
+		padding: $gt-button-small-padding;
+		font-size: $gt-button-small-font-size;
+	}
+	
+	&--mini {
+		height: $gt-button-mini-height;
+		padding: $gt-button-mini-padding;
+		font-size: $gt-button-mini-font-size;
+
+		& + .van-button--mini {
+			margin-left: $gt-padding-base;
 		}
 	}
 

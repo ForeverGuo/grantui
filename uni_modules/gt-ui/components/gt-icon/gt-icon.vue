@@ -1,13 +1,13 @@
 <template>
 	<view>
-		<text 
+		<span 
 			class="gt-icons"
 			:class="[`gtui-${name}`, loading ? 'spinner' : '' ]"
 			:style="{ 
 				fontSize: setIconSize, 
 				color: color
 			}"
-		></text>
+		></span>
 	</view>
 </template>
 
@@ -20,7 +20,7 @@
 		},
 		// 默认size是20px
 		size: {
-			type: [ String || Number ],
+			type: [ String, Number ],
 			default: 20
 		},
 		color: {

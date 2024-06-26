@@ -7,9 +7,13 @@
 			disabled ? `gt-button--disabled` : '',
 			square ? `gt-button--square` : '',
 			round ? `gt-button--round` : '',
+			size ? `gt-button--${size}` : '',
 			`gt-button--${ type }`,
 		]"
 	>
+		<view v-if="icon" style="width: 48rpx;">
+			<gtIcon :name="icon" :color="iconColor"/>
+		</view>
 		<slot></slot>
 		<view v-if="loading">
 			<gtLoading v-if="!loadingType" :id="1" :loadingText="loadingText" />
@@ -20,6 +24,8 @@
 
 <script lang="ts" setup>
 	import gtLoading from '../gt-loading/gt-loading.vue';
+	import gtIcon from '../gt-icon/gt-icon.vue';
+	
 	defineProps({
 		// 按钮类型，可选值为 default primary success warning danger
 		type: {
@@ -67,8 +73,24 @@
 		loadingText: {
 			type: String,
 			default: ''
+		},
+		icon: {
+			type: String,
+			default: ''
+		},
+		iconColor: {
+			type: String,
+			default: '#fff'
 		}
 	})
+
+	// const colors = {
+	// 	primary: '#1989fa',
+	// 	success: '#07c160',
+	// 	danger: '#ee0a24',
+	// 	warning: '#ff976a',
+	// 	default: '#323233'
+	// }
 </script>
 <style lang="scss" scoped>
 	@import './gt-button.scss';

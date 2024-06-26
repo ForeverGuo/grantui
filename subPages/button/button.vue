@@ -40,6 +40,22 @@
 			<gt-button class="mr30 mb20" loading type="primary" loading-text="加载中..."></gt-button>
 		</view>
 		
+		<view class="mt20 mb30 fs28 c-455a">图标按钮</view>
+		<view class="flex-box flex-wrap">
+			<gt-button class="mr30 mb20" icon="sousuo" type="success">按钮</gt-button>
+			<gt-button class="mr30 mb20" icon="home" icon-color="#1989fa" plain type="primary">按钮</gt-button>
+		</view>
+		
+		<view class="mt20 mb30 fs28 c-455a">按钮尺寸</view>
+		<view>
+			<gt-button class="mr30 mb20" type="success" size="large">大按钮</gt-button>
+		</view>
+		<view class="flex-box flex-wrap">
+			<gt-button class="mr30 mb20" type="primary" size="normal">正常按钮</gt-button>
+			<gt-button class="mr30 mb20" type="primary" size="small">小按钮</gt-button>
+			<gt-button class="mr30 mb20" type="primary" size="mini">迷你按钮</gt-button>
+		</view>
+		
 		
 	</view>
 </template>
