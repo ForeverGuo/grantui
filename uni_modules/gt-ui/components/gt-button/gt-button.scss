@@ -188,6 +188,8 @@ $gt-button-loading-icon-size: 20px !default;
 	&--block {
 	  display: block;
 	  width: 100%;
+		text-align: center;
+		line-height: $gt-button-large-height;
 	} 
 
 	&--round {

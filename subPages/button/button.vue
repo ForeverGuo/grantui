@@ -56,6 +56,19 @@
 			<gt-button class="mr30 mb20" type="primary" size="mini">迷你按钮</gt-button>
 		</view>
 		
+		<view class="mt20 mb30 fs28 c-455a">块级元素</view>
+		<view>
+			<gt-button class="mr30 mb20" type="success" block>块级元素</gt-button>
+		</view>
+		<view class="mt20 mb30 fs28 c-455a">自定义颜色</view>
+		<view class="flex-box flex-wrap">
+			<gt-button class="mr30 mb20" color="#7232dd">单色按钮</gt-button>
+			<gt-button class="mr30 mb20" color="#7232dd" plain>单色按钮</gt-button>
+			<gt-button class="mr30 mb20" color="linear-gradient(to right, #4bb0ff, #6149f6)">
+				渐变色按钮
+			</gt-button>
+		</view>
+		
 		
 	</view>
 </template>

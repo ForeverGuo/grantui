@@ -8,8 +8,10 @@
 			square ? `gt-button--square` : '',
 			round ? `gt-button--round` : '',
 			size ? `gt-button--${size}` : '',
+			block ? `gt-button--block` : '',
 			`gt-button--${ type }`,
 		]"
+		:style="setStyle"
 	>
 		<view v-if="icon" style="width: 48rpx;">
 			<gtIcon :name="icon" :color="iconColor"/>
@@ -25,8 +27,9 @@
 <script lang="ts" setup>
 	import gtLoading from '../gt-loading/gt-loading.vue';
 	import gtIcon from '../gt-icon/gt-icon.vue';
+	import { computed } from 'vue';
 	
-	defineProps({
+	const props = defineProps({
 		// 按钮类型，可选值为 default primary success warning danger
 		type: {
 			type: String,
@@ -62,25 +65,40 @@
 			type: Boolean,
 			default: false
 		},
+		// 是否是加载状态
 		loading: {
 			type: Boolean,
 			default: false
 		},
+		// 加载状态类型
 		loadingType: {
 			type: String,
 			default: ''
 		},
+		// 加载文案
 		loadingText: {
 			type: String,
 			default: ''
 		},
+		// 自定义icon
 		icon: {
 			type: String,
 			default: ''
 		},
+		// 自定义icon颜色
 		iconColor: {
 			type: String,
 			default: '#fff'
+		},
+		// 是否是块级元素
+		block: {
+			type: Boolean,
+			default: false
+		},
+		// 自定义颜色
+		color: {
+			type: String,
+			default: ''
 		}
 	})
 
@@ -91,6 +109,24 @@
 	// 	warning: '#ff976a',
 	// 	default: '#323233'
 	// }
+	
+	const setStyle = computed(() => {
+		if (props.plain && props.color) {
+			return {
+				border: `2rpx solid ${props.color}`,
+				color: `${props.color}`,
+				background: '#fff'
+			}
+		}
+		
+		if (props.color) {
+			return {
+				color: '#fff',
+				background: `${props.color}`
+			}
+		}
+	})
+	
 </script>
 <style lang="scss" scoped>
 	@import './gt-button.scss';
