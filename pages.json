@@ -26,6 +26,7 @@
 				{
 					"path": "icon/icon",
 					"style": {
+						"navigationStyle": "custom",
 						"navigationBarTitleText": "图标"
 					}
 				}

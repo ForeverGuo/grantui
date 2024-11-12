@@ -1,5 +1,5 @@
 <template>
-	<view>123</view>
+	<view>gt-ui</view>
 </template>
 <script>
 </script>

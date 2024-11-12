@@ -1,4 +1,5 @@
 <template>
+	<navbar />
 	<view class="icon">
 		<view class="flex-box flex-wrap ">
 			<gt-icon class="icon-item" v-for="(item, index) in iconArray" :key="index" :name="item" size="30" />
